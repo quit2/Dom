@@ -73,6 +73,10 @@ IE9以前版本不⽀支持标准的addEventListener⽅方法，⽽而提供了 
 
 
 ##### 阻止默认事件 
-* event.preventDefault⽅方法，标准方法 
+* event.preventDefault方法，标准方法 
 * event.returnValue = false；IE浏览器的方法
+
+#####  阻止事件冒泡 
+* event.stopPropagation方法，标准方法 
+* event.cancelBubble = true; IE浏览器的方法
   
