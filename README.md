@@ -49,4 +49,30 @@
 * var divAdd = document.createElement("div");
   var newText = document.createTextNode("sometext goes here");
   divAdd.appendChild(newText);
+  
+  
+#### 事件处理
+##### addEventListener 
+IE9以前版本不⽀支持标准的addEventListener⽅方法，⽽而提供了 attachEvent⽅方法提供使⽤用。
+
+* function addEventListener(obj, type, handler){
+*    if(obj.attachEvent){
+*       obj.attachEvent('on' + type, handler);
+*    }else if(obj.addEventListener){
+*       obj.addEventListener(type, handler, false);
+*    }
+* }
+* var btn = document.getElementById('test');
+* addEventListener(btn, 'click', function(){
+*      ....
+* });
+
+##### 删除已注册的事件处理程序
+* document.removeEventListener 
+* document.detachEvent
+
+
+##### 阻止默认事件 
+* event.preventDefault⽅方法，标准方法 
+* event.returnValue = false；IE浏览器的方法
   
