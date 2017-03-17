@@ -34,3 +34,19 @@
 * 根据CSS类名称获取元素： getElementsByClassName⽅方法  在IE8及一下的版本中不支持
 * 根据CSS选择器获取元素： querySelectorAll⽅方法  在IE8及一下的版本中不支持
 
+#### Node对象的重要属性 
+* parentNode：获取父亲节点 
+* ﬁrstChild, lastChild：子节点中的第一个、最后一个节点 
+* nextSibling, previousSibling： 兄弟节点中的上一个、下 一个节点 
+* nodeType, nodeValue, nodeName：节点类型、文本内 容、节点的元素标签名称
+
+ * element.hasAttribute(attributeName) 
+ * element.removeAttribute(attributeName)
+* innerHTML
+* innerText (ie支持)
+* textContent (标准写法)
+* createTextNode
+* var divAdd = document.createElement("div");
+  var newText = document.createTextNode("sometext goes here");
+  divAdd.appendChild(newText);
+  
